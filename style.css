@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&display=swap');
+
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    height: 100vh;
+    background-color: var(--very-light-violet);
+    padding: 1.5em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Colors */
+
+:root {
+    --black: #1c1c1c;
+    --silver: #c0c0c0;
+    --white: #FFF;
+    --very-light-violet: #a9a8dd;
+    --red: #ff0000;
+    --pale-orange: #d39043;
+    --green: #38e738;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h3,
+.navbar a {
+    color: var(--silver);
+}
+
+.navbar {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.current {
+    color: var(--black);
+}
+
+h3, 
+.user-description {
+    font-size: .94rem;
+}
+
+.user-title {
+    letter-spacing: 1px;
+}
+
+.user-description {
+    color: var(--black);
+    font-weight: 600;
+    opacity: .5;
+    text-align: justify;
+}
+
+
+/* Layout */
+
+header {
+    position: relative;
+}
+
+.hero-img {
+    background-image: url("https://images.pexels.com/photos/6439051/pexels-photo-6439051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 6em;
+    max-height: 12em;
+}
+
+.page-control {
+    display: none;
+}
+
+.page-control {
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 13%;
+}
+
+.page-control > li {
+    width: 1em;
+}
+
+.control-close {
+    color: var(--red);
+}
+
+.control-min {
+    color: var(--pale-orange);
+}
+
+.control-max {
+    color: var(--green);
+}
+
+.user-pic {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    bottom: -30%;
+}
+
+nav, 
+main {
+    background-color:var(--white);
+    padding: 2em 1.5em 0;
+}
+
+nav {
+    border-bottom: 2px solid transparent;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+a.current {
+    color: var(--black);
+}
+
+.btn {
+    background-color: var(--black);
+    padding: .4em .8em;
+}
+
+a.btn {
+    color: var(--white);
+}
+
+.user-title {
+    margin-bottom: 1.5em;
+}
+
+.user-description {
+    margin: 1.5em auto;
+}
+
+.subsection {
+    margin-bottom: .75em;
+}
+
+.pictures {
+    display: grid;
+    gap: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.social-media-icons {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.social-media-icons > li {
+    width: 1.5em;
+    margin: 1em auto;
+}
+
+
